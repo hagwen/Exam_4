@@ -1,0 +1,73 @@
++-----------------------+
+  |    Start Program      |
+  +-----------+-----------+
+              |
+              v
+    +------------------+
+    | Initialize GPIO  |
+    | Controller & Pins|
+    +---------+--------+
+              |
+              v
+    +------------------+
+    | Initialize LEDs   |
+    |   and Buttons     |
+    +---------+--------+
+              |
+              v
+     +---------+-------+
+     | Register event  |
+     |   handlers for  |
+     |   button press  |
+     +--------+--------+
+              |
+              v
+     +---------+-------+
+     |  Enter Main Loop|
+     |    (isPlaying)   |
+     +--------+--------+
+              |
+              v
+       +------+-------+
+       | Check if      |
+       | 20 rounds     |
+       | completed     |
+       +------+-------+
+              |
+    +---------+--------+
+    | If rounds == 20  |
+    |   Set isPlaying  |
+    |     to false     |
+    +---------+--------+
+              |
+              v
+     +---------+--------+
+     |     End Program   |
+     +---------+--------+
+              |
+              v
+   +----------+---------+
+   |Button Value Changed|
+   |   (Event Handler)  |
+   +----------+---------+
+              |
+      +-------+-------+
+      | Check if button|
+      |     pressed    |
+      +-------+-------+
+              |
+      +-------+-------+
+      |   Turn off all  |
+      |    LEDs         |
+      +-------+-------+
+              |
+      +-------+-------+
+      | Turn on LED     |
+      |   associated    |
+      |   with pressed  |
+      |   button        |
+      +-------+-------+
+              |
+      +-------+-------+
+      | Increment rounds|
+      +-------+-------+
